@@ -1,5 +1,5 @@
 # operator-node-configuration
-1  sudo yum update -y
+    1  sudo yum update -y
     2  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
     3  unzip awscliv2.zip
     4  sudo ./aws/install
@@ -22,6 +22,6 @@
    21  tar -xzf eksctl_$(uname -s)_amd64.tar.gz
    22  sudo mv eksctl /usr/local/bin
    23  eksctl version
-   24  eksctl create cluster --name eks-demo --region us-east-1 --nodegroup-name worker-node --node-type t3.medium --nodes 2 --nodes-min 1 --nodes-max 4
+   24  eksctl create cluster --name eks-demo --region us-east-1 --nodegroup-name worker-node --node-type t3.medium --nodes 2 --nodes-          min 1 --nodes-max 4
    25  kubectl get all
    26  history
